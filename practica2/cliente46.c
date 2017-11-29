@@ -12,7 +12,7 @@ Descripción:
 
 Autor: Juan Carlos Cuevas Martínez
 
-*******************************************************/
+****************************************************/
 #include <stdio.h>
 #include <ws2tcpip.h>//Necesaria para las funciones IPv6
 #include <conio.h>
