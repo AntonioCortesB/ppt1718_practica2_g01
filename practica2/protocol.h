@@ -1,5 +1,6 @@
 #ifndef protocolostpte_practicas_headerfile
 #define protocolostpte_practicas_headerfile
+#define _WINSOCK_DEPRECATED_NO_WARNINGS //lo necesitamos para evitar errores en VisualStudio2017 y que funcione el apartado del dominio
 #endif
 // Línea para commit de prueba, vamos a usarla para probar un commit.
 // COMANDOS DE APLICACION
@@ -17,6 +18,8 @@
 // RESPUESTAS A COMANDOS DE APLICACION
 #define OK  "OK"
 #define ER  "ER"
+#define UU "554 User Unknown" //Este error lo hemos buscado en google, es el error 5xx (error de servidor) que corresponde a usuario desconocido.
+
 
 //FIN DE RESPUESTA
 #define CRLF "\r\n"
@@ -42,8 +45,8 @@
 #define TCP_SERVICE_PORT	6000 //Ya no sirve
 
 // NOMBRE Y PASSWORD AUTORIZADOS
-#define USER		"alumno"
-#define PASSWORD	"123456"
+#define USER		"alumno"  //Ya no sirve
+#define PASSWORD	"123456"  //Ya no sirve
 
 //Definimos el puerto por defecto
 #define defaultmailPort 25  //Lo fijamos en el puerto 25
